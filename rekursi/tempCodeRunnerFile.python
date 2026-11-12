@@ -1,0 +1,7 @@
+def disc_shift(g):
+    if g <= 1:
+        return 1
+    return (2 ** g) - 1
+
+g = int(input())
+print(f"Jumlah langkah minimum untuk {g} cakram adalah", disc_shift(g))
